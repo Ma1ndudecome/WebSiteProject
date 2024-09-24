@@ -1,0 +1,49 @@
+.LoadScreen{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(28, 39, 58);
+    z-index: 2;
+    opacity: 1;
+    /* animation: opacity 0.1s 5s forwards; */
+    display: none;
+}
+
+.LoadScreen_item_load {
+    height: 20%;
+}
+.LoadScreen_item_load img{
+    width: 100%;
+    height: 100%;
+}
+.LoadScreen_item_loadBar{
+    width: 20%;
+    height: 2%;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+}
+.LoadScreen_item_loadBar:before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: lightgreen;
+    border-radius: 20px;
+    animation: bar 4.8s linear forwards;
+}
+/* @keyframes opacity{
+    100%{
+        opacity: 0;
+        display: none;
+    }
+} */
+ @keyframes bar{
+    100%{
+        width: 100%;
+    }
+ }
+

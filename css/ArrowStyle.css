@@ -1,0 +1,24 @@
+.containerArrow{
+    position: fixed;
+    right: 4%;
+    top:50%;
+    height: 15%;
+    width: 3%;
+    z-index: 1;
+}
+.containerArrow_item img{
+    width: var(--OneHundred);
+    height: var(--OneHundred);
+    cursor: pointer;
+}
+@media (max-width:700px){
+    .containerArrow{
+        width: 7%;
+    }
+}
+@media (max-width:440px) {
+    .containerArrow{
+        width: 7%;
+    }
+
+}
