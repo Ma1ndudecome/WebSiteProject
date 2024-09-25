@@ -6,7 +6,7 @@
     background-color:rgb(28, 39, 58);
     z-index: 2;
     opacity: 1;
-    /* animation: opacity 0.1s 5s forwards; */
+    animation: opacity 0.1s 5s forwards;
     display: none;
 }
 
@@ -35,12 +35,12 @@
     border-radius: 20px;
     animation: bar 4.8s linear forwards;
 }
-/* @keyframes opacity{
+@keyframes opacity{
     100%{
         opacity: 0;
         display: none;
     }
-} */
+}
  @keyframes bar{
     100%{
         width: 100%;

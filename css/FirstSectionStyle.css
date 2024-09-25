@@ -26,15 +26,11 @@ body{
 .FirstSection_main_main{
     height: 92%;
     position: var(--PosRelative);
+    background-image: url(/img/BackLapTop-photoaidcom-darken.jpg);
+    background-size: cover;
     
 }
-.FirstSection_main_image{
-    width: var(--OneHundred);
-    height: var(--OneHundred);
-    position: absolute;
-    z-index: -1;
-    filter: brightness(0.4);
-}
+
 .FistSection_header_left{
     width: 30%;
     height: var(--OneHundred);
@@ -80,6 +76,11 @@ body{
 }
 .FistSection_header_right_list_item:hover{
     transform: translateY(-2px);
+}
+
+.FistSection_header_burger_image{
+    width: var(--OneHundred);
+    height:var(--OneHundred); 
 }
 .FirstSection_main_top{
     gap: 50px;
@@ -132,7 +133,7 @@ body{
 }
 .FirstSection_main_bottom_item_image{
     width: 22%;
-    height: 35%;
+
 }
 @media (max-width:1550px){
     .FirstSection_main_bottom_item {
@@ -182,7 +183,6 @@ body{
     }
     .FirstSection_main_bottom_item_image {
         width: 20%;
-        height: 26%;
     }
 }
 @media (max-width:960px){
@@ -197,7 +197,7 @@ body{
     }
     .FirstSection_main_bottom_item_image {
         width: 15%;
-        height: 22%;
+
     }
     .FirstSection_main_top{
         height: 50%;
@@ -219,10 +219,6 @@ body{
     }
     .FirstSection_main_bottom_item_image {
         width: 22%;
-        height: 27%;
-    }
-    .containerArrow{
-        width: 7%;
     }
 }
 @media (max-width:550px) {
@@ -231,8 +227,7 @@ body{
     }
     .FirstSection_main_bottom_item_image {
         width: 30%;
-        height: 27%;
-    } 
+    }
 }
 @media (max-width:440px) {
     .FirstSection_main_top_title{
@@ -240,11 +235,9 @@ body{
     }
     .FirstSection_main_bottom_item_image {
         width: 50%;
-        height: 27%;
     }
-    .containerArrow{
-        width: 10%;
-    }
+ 
+
 
 }
 @media (max-height:375px){
@@ -265,9 +258,9 @@ body{
     
     .FirstSection_main_bottom_item_image {
         width: 23%;
-        height: 50%;
     }
     .FirstSection_main_top_title{
         font-size: 30px; 
     }
+   
 }

@@ -1,0 +1,58 @@
+.FistSection_header_burger{
+    display: none;
+}
+@media (max-width:960px){
+    .FistSection_header_burger{
+        display: block;
+        width: 8%;
+    }
+    .FistSection_header_burger:hover .FistSection_header_burger_menu{
+        height: 320px;
+        
+    }
+    .FistSection_header_burger:hover .FistSection_header_burger_menu .FistSection_header_burger_menu_list{
+        font-size: 15px;
+        
+    }
+    .FistSection_header_burger_menu{
+        position: absolute;
+        right:0;
+        top: 0;
+        width: 168px;
+        height: 0px;
+        background-color: rgba(28, 39, 58, 0.9);
+        z-index: 1;
+        transition: 0.5s;
+        border-radius: 20px;
+    }
+    .FistSection_header_burger_menu_list{
+        font-family: "Montserrat", sans-serif;
+        margin-right: 20px;
+        height: 100%;
+        color: #ECECEC;
+        font-size: 0;
+    }
+    .FistSection_header_burger_list{
+        list-style: none;
+        gap:15px;
+    }
+    .FistSection_header_burger_menu_close_image{
+        width: 100%;
+    }
+
+}
+@media (max-width:700px){
+    .FistSection_header_burger{
+        width: 11%;
+    }
+}
+@media (max-width:550px) {
+    .FistSection_header_burger{
+        width: 14%;
+    }
+}
+@media (max-width:440px) {
+    .FistSection_header_burger{
+        width: 17%;
+    }
+}
