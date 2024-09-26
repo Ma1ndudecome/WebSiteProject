@@ -2,6 +2,7 @@
     height:110%;
 }
 .ThirdSection__Header{
+    gap:20px;
     height: 30%;
 }
 .ThirdSection__Main{
@@ -12,5 +13,20 @@
 }
 .ThirdSection__Header-title{
     font-family: "Dancing Script", cursive;
-    font-size: 25px;
+    font-size: 26px;
+}
+.ThirdSection__Header-story{
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+}
+.line{
+    width: 60px;
+    height: 3px;
+    background-color:rgb(233, 101, 101);
+    margin-bottom: 2%;    
+}
+.ThirdSection__Header-paragraph{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 15px;
 }
