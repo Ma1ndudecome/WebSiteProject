@@ -26,7 +26,7 @@ body{
 .FirstSection_main_main{
     height: 92%;
     position: var(--PosRelative);
-    background-image: url(/img/BackLapTop-photoaidcom-darken.jpg);
+    background-image: url(/WebSiteProject/img/BackLapTop-photoaidcom-darken.jpg);
     background-size: cover;
     
 }

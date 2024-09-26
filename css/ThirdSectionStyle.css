@@ -1,0 +1,16 @@
+.ThirdSection{
+    height:110%;
+}
+.ThirdSection__Header{
+    height: 30%;
+}
+.ThirdSection__Main{
+    height: 40%;
+}
+.ThirdSection__Footer{
+    height: 40%;
+}
+.ThirdSection__Header-title{
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+}
