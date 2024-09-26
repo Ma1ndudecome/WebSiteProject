@@ -1,16 +1,19 @@
 .ThirdSection{
-    height:110%;
+    height:120%;
 }
 .ThirdSection__Header{
     gap:20px;
-    height: 30%;
+    height: 25%;
 }
 .ThirdSection__Main{
-    height: 28%;
+    height: 25%;
     margin-top: 50px;
 }
 .ThirdSection__Footer{
-    height: 30%;
+    height: 45.6%;
+}
+video{
+    display: none;
 }
 .ThirdSection__Header-title{
     font-family: "Dancing Script", cursive;
@@ -40,8 +43,6 @@
     transition: 0.5s;
     cursor: pointer;
     position: relative;
-    
-
 }
 .ThirSection__Main__block-box-image{
     width: 100%;
@@ -72,5 +73,74 @@
 .text{
     height: 50%;
     margin-top: 20px;
-    color:white
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
 }
+.ThirdSection__Footer__block{
+    height: 92%;
+    width: 100%;
+}
+.ThirdSection__Footer__block-box{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/background-second.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+.ThirdSection__Footer__block-box-title{
+    z-index: 3;
+    font-family: "Poppins", sans-serif;
+    color:white;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+.ThirdSection__Footer__block-box-circle:before{
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient( rgba(181, 117, 233, 0.3), rgba(0, 0, 0, 0.7));
+}
+.ThirdSection__Footer__block-box:hover .ThirdSection__Footer__block-box-circle svg{
+    animation: puls 2s infinite linear;
+}
+.ThirdSection__Footer__block-box-circle{
+    width: 100%;
+    height: 32%;
+}
+.ThirdSection__Footer__block-box-circle svg{
+    width: 10%;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+
+.ThirdSection__Footer__block-box-paragraph{
+    font-family: "Poppins", sans-serif;
+    color:white;
+    z-index: 3;
+}
+
+@keyframes puls{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+ 
+
+
+
