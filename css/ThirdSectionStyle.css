@@ -6,10 +6,11 @@
     height: 30%;
 }
 .ThirdSection__Main{
-    height: 40%;
+    height: 28%;
+    margin-top: 50px;
 }
 .ThirdSection__Footer{
-    height: 40%;
+    height: 30%;
 }
 .ThirdSection__Header-title{
     font-family: "Dancing Script", cursive;
@@ -29,4 +30,39 @@
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-size: 15px;
+}
+.ThirdSection__Main__block{
+    width: 70%;
+    gap:30px
+}
+.ThirSection__Main__block-box{
+    width:calc(33.3333% - 20px);
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    
+
+}
+.ThirSection__Main__block-box-image{
+    width: 100%;
+    height: 100%;
+
+}
+.ThirSection__Main__block-box:hover{
+    transform: translateX(-10px) translateY(-10px);
+    box-shadow: 10px 10px 0px aqua;
+}
+.ThirSection__Main__block-box:hover .IconTextHoverBlock{
+   opacity: 1;
+}
+
+.IconTextHoverBlock{
+    opacity: 0;
+    position: absolute;
+    left:0;
+    top:0;
+    background-image: linear-gradient(#e4837cea,#eac781ec) ;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
 }
