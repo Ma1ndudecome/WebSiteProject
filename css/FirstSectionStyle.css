@@ -76,6 +76,7 @@ body{
 }
 .FistSection_header_right_list_item:hover{
     transform: translateY(-2px);
+    color:rgb(221, 111, 243);
 }
 
 .FistSection_header_burger_image{
@@ -263,4 +264,13 @@ body{
         font-size: 30px; 
     }
    
+}
+@media (max-height:500px){
+    .FirstSection_main_top {
+        gap: 20px;
+       
+    }
+    .FirstSection_main_top_title{
+        font-size: 29px; 
+    }
 }
