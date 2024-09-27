@@ -14,6 +14,8 @@ body{
     --PosRelative:relative;
     --twenty:20px;
     --center:center;
+    --halfPix:50px;
+    --halfPros:50%;
 }
 
 .FirstSection_Main{
@@ -261,9 +263,14 @@ body{
         width: 23%;
     }
     .FirstSection_main_top_title{
-        font-size: 30px; 
+        font-size: 25px; 
     }
-   
+    .FirstSection_main_bottom_item_image {
+        width: 15%;
+    }
+    .FirstSection_main_bottom_item {
+        gap: 5px;
+    }
 }
 @media (max-height:500px){
     .FirstSection_main_top {
@@ -271,6 +278,6 @@ body{
        
     }
     .FirstSection_main_top_title{
-        font-size: 29px; 
+        font-size: 25px; 
     }
 }
