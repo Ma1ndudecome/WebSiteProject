@@ -4,10 +4,9 @@
     width: 100%;
     height: 100vh;
     background-color:rgb(28, 39, 58);
-    z-index: 2;
+    z-index: 4;
     opacity: 1;
-    animation: opacity 0.1s 5s forwards;
-    display: none;
+    animation: opacity 0.1s 3s forwards;
 }
 
 .LoadScreen_item_load {
@@ -20,8 +19,8 @@
 .LoadScreen_item_loadBar{
     width: 20%;
     height: 2%;
-    border: 2px solid black;
-    border-radius: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
     position: relative;
 }
 .LoadScreen_item_loadBar:before{
@@ -31,9 +30,9 @@
     position: absolute;
     left:0;
     top:0;
-    background-color: lightgreen;
+    background-color: rgb(250, 56, 56);
     border-radius: 20px;
-    animation: bar 4.8s linear forwards;
+    animation: bar 3s  forwards;
 }
 @keyframes opacity{
     100%{
@@ -42,8 +41,18 @@
     }
 }
  @keyframes bar{
+    30%{
+        width: 30%;
+    }
+    70%{
+        width: 70%;
+    }
     100%{
         width: 100%;
     }
  }
-
+@media (max-width:900px){
+    .LoadScreen_item_loadBar {
+        width: 50%;
+    }
+}

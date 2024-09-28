@@ -4,6 +4,8 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow: hidden;
+    animation: enableScroll 1s 5s  forwards;
 }
 html,
 body{
@@ -137,6 +139,11 @@ body{
 .FirstSection_main_bottom_item_image{
     width: 22%;
 
+}
+@keyframes enableScroll {
+    100% {
+        overflow: auto;
+    }
 }
 @media (max-width:1550px){
     .FirstSection_main_bottom_item {
