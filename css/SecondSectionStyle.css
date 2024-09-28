@@ -31,6 +31,7 @@
     width: calc(25% - 9px);
     height: 80%;
     transition: 0.5s;
+    box-shadow: 0px 0px 5px rgb(99, 98, 98);
 }
 .SecondSection__block-box:hover{
     box-shadow: 0px 0px 10px black;
@@ -60,19 +61,20 @@
 }
 
 .SecondSection__block-box-line{
-    height: 3px;
+    height: 4px;
+    margin-top: 14px;
 }
 .first-color{
-    background-color: rgb(233, 101, 101);
+    background-color: var(--redcolor);
 }
 .second-color{
-    background-color: lightgreen;
+    background-color:var(--greencolor)
 }
 .third-color{
-    background-color: rgb(218, 10, 218);
+    background-color: var(--purplecolor);
 }
 .four-color{
-    background-color: rgb(245, 200, 78);
+    background-color: var(--orangecolor)
 }
 .h{
     height: 87%;
@@ -191,14 +193,17 @@
     }
 }
 @media (max-width:1100px) and (max-height:800px){
-    .SecondSection{
-        height: 180%;
+    .SecondSection {
+        height: 200%;
     }
     .SecondSection__bottom-block {
         height: 75%;
     }
     .SecondSection__bottom-block {
         height: 100%;
+    }
+    .SecondSection__block-box-text-paragraph {
+        font-size: 10px;
     }
 }
 @media (max-width:950px) and (max-height:450px){

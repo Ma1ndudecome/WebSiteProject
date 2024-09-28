@@ -4,8 +4,8 @@
 }
 html{
     scroll-behavior: smooth;
-    overflow: hidden;
-    animation: enableScroll 1s 5s  forwards;
+    /* overflow: hidden;
+    animation: enableScroll 1s 5s  forwards; */
 }
 html,
 body{
@@ -18,6 +18,10 @@ body{
     --center:center;
     --halfPix:50px;
     --halfPros:50%;
+    --redcolor:rgb(245, 93, 66);
+    --orangecolor:rgb(245, 200, 78);
+    --greencolor:lightgreen;
+    --purplecolor:rgb(218, 10, 218);
 }
 
 .FirstSection_Main{
@@ -50,7 +54,7 @@ body{
     font-weight: 700;
 }
 .FirstSection_header_left_item::first-letter{
-    color:rgb(245, 93, 66);
+    color:var(--redcolor)
 }
 .FistSection_header_right_list{
     list-style: none; 
@@ -72,7 +76,7 @@ body{
     position: absolute;
     left:0;
     bottom:0;
-    background-color: rgb(221, 111, 243);
+    background-color: var(--purplecolor);
     transition: 0.5s;
 }
 .FistSection_header_right_list_item:hover::before{
@@ -80,7 +84,7 @@ body{
 }
 .FistSection_header_right_list_item:hover{
     transform: translateY(-2px);
-    color:rgb(221, 111, 243);
+    color:var(--purplecolor);
 }
 
 .FistSection_header_burger_image{
@@ -106,7 +110,7 @@ body{
     text-decoration: none;
     color:white;
     padding: 15px 40px 15px 40px;
-    background-color: rgb(241, 77, 77);
+    background-color:var(--redcolor);
     border-radius: 30px;
     font-size: var(--twenty); 
     font-family: "Open Sans", sans-serif;
@@ -116,7 +120,7 @@ body{
     
 }
 .FirstSection_main_top_button:hover{
-    box-shadow: 0px 0px 20px rgb(241, 77, 77);
+    box-shadow: 0px 0px 20px var(--redcolor);
 
 }
 .FirstSection_main_bottom_item{
@@ -128,13 +132,13 @@ body{
     
 }
 .FirstSection_main_bottom_item:nth-child(1){
-    color:lightgreen
+    color:var(--greencolor)
 }
 .FirstSection_main_bottom_item:nth-child(2){
-    color:rgb(230, 13, 230)
+    color:var(--purplecolor);
 }
 .FirstSection_main_bottom_item:nth-child(3){
-    color:rgb(230, 179, 13)
+    color:var(--orangecolor)
 }
 .FirstSection_main_bottom_item_image{
     width: 22%;
@@ -246,17 +250,13 @@ body{
     .FirstSection_main_bottom_item_image {
         width: 50%;
     }
- 
-
-
 }
 @media (max-height:375px){
     .FistSection_header{
         height: 10%;
     }
     .FirstSection_main_main {
-        height: 90%;
-        
+        height: 90%;   
     }
     .FirstSection_main_top{
         height: 60%;
@@ -265,7 +265,6 @@ body{
         height: 40%;
         
     }
-    
     .FirstSection_main_bottom_item_image {
         width: 23%;
     }
@@ -282,7 +281,6 @@ body{
 @media (max-height:500px){
     .FirstSection_main_top {
         gap: 20px;
-       
     }
     .FirstSection_main_top_title{
         font-size: 25px; 
