@@ -25,3 +25,6 @@
 .alignItemStart{
     align-items: start;
 }
+.justifyStart{
+    justify-content: flex-start;
+}

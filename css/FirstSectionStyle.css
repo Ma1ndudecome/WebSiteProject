@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 html{
     scroll-behavior: smooth;
@@ -19,9 +21,10 @@ body{
     --halfPix:50px;
     --halfPros:50%;
     --redcolor:rgb(245, 93, 66);
-    --orangecolor:rgb(245, 200, 78);
+    --orangecolor:rgb(235, 181, 35);
     --greencolor:lightgreen;
-    --purplecolor:rgb(218, 10, 218);
+    --purplecolor:rgb(240, 55, 240);
+    --whitecolor:white
 }
 
 .FirstSection_Main{
@@ -57,7 +60,6 @@ body{
     color:var(--redcolor)
 }
 .FistSection_header_right_list{
-    list-style: none; 
     gap: var(--twenty); 
     font-size: var(--twenty); 
 }
@@ -68,6 +70,7 @@ body{
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 500;
+    color:black
 }
 .FistSection_header_right_list_item:before{
     content: "";
@@ -181,7 +184,6 @@ body{
 }
 @media (max-width:1100px){
     .FistSection_header_right_list {
-        list-style: none;
         gap: 15px;
         font-size: var(--twenty);
     }

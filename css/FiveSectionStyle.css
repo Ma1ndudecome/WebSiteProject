@@ -1,0 +1,279 @@
+
+.FiveSection__Header{
+    margin-top: 300px;
+}
+.FiveSection__Header-title{
+    font-family: "Gowun Batang", serif;
+    font-size: 45px;
+}
+.FiveSection__Header-paragraph{
+    font-family: "Gowun Batang", serif;
+    font-size: 20px
+}
+.FiveSection__Main__block{
+    width: 70%;
+}
+.FiveSection__Main{
+    margin-top: 100px;
+}
+.FiveSection__Main__block-box{
+    width: calc(25% - 20px);
+    transition: 0.8s;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(165, 165, 165, 0.822);
+}
+.FiveSection__Main__block-box:nth-child(1){
+    border-bottom: 3px solid var(--redcolor);
+    color:var(--redcolor) 
+}
+.FiveSection__Main__block-box:nth-child(1):hover{
+    background-color: var(--redcolor);
+    box-shadow: 0px 0px 30px var(--redcolor);
+    color:var(--whitecolor)
+}
+.FiveSection__Main__block-box:nth-child(2){
+    border-bottom: 3px solid var(--greencolor);
+    color:var(--greencolor)
+}
+.FiveSection__Main__block-box:nth-child(2):hover{
+    background-color:var(--greencolor);
+    box-shadow: 0px 0px 30px var(--greencolor);
+    color:var(--whitecolor)
+}
+.FiveSection__Main__block-box:nth-child(3){
+    border-bottom: 3px solid var(--purplecolor);
+    color:var(--purplecolor);
+}
+.FiveSection__Main__block-box:nth-child(3):hover{
+    background-color: var(--purplecolor);
+    box-shadow: 0px 0px 30px var(--purplecolor);
+    color:var(--whitecolor)
+}
+.FiveSection__Main__block-box:nth-child(4){
+    border-bottom: 3px solid var(--orangecolor);
+    color:var(--orangecolor);
+}
+.FiveSection__Main__block-box:nth-child(4):hover{
+    background-color:var(--orangecolor);
+    box-shadow: 0px 0px 30px var(--orangecolor);
+    color:var(--whitecolor)
+}
+.FiveSection__Main__block-box-image{
+    height: 82%;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+   
+}
+.FiveSection__Main__block-box-text{
+    height: 18%;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.FiveSection__Main__block-box-image-photo{
+    width: var(--OneHundred);
+    height: var(--OneHundred);
+}
+
+.FiveSection__Main__block-box-text-name{
+    font-weight: 500;
+    font-size: 19px;
+}
+.FiveSection__Main__block-box-text-position{
+    font-weight: 500;
+}
+.photo1:before{
+    content: "";
+    position: absolute;
+    left:2%;
+    bottom: 4px;
+    height: 40%;
+    width: 96%;
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0));
+}
+.photo2:before{
+    content: "";
+    position: absolute;
+    left:2%;
+    bottom: 4px;
+    height: 40%;
+    width: 96%;
+    background: linear-gradient(to top, rgba(61, 240, 6, 0.2), rgba(255, 0, 0, 0));
+}
+.photo3:before{
+    content: "";
+    position: absolute;
+    left:2%;
+    bottom: 4px;
+    height: 40%;
+    width: 96%;
+    background: linear-gradient(to top, rgba(243, 99, 236, 0.2), rgba(255, 0, 0, 0));
+}
+.photo4:before{
+    content: "";
+    position: absolute;
+    left:2%;
+    bottom: 4px;
+    height: 40%;
+    width: 96%;
+    background: linear-gradient(to top, rgba(245, 209, 89, 0.4), rgba(255, 0, 0, 0));
+}
+.FiveSection__Footer{
+    margin-top: 50px;
+}
+.FiveSection__Footer__block{
+    width: 70%;
+    padding: 30px 115px 30px 105px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(165, 165, 165, 0.822);
+
+}
+.FiveSection__Footer__box-text{
+    width: 60%;
+    gap: 20px;
+}
+.FiveSection__Footer__block-icon-li{
+    width: 40%;
+    gap: 80px;
+}
+.FiveSection__Foter__block-li-list{
+    gap:5px
+}
+.FiveSection__Foter__box-text-paragraph{
+    width: 100%;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    opacity: 0.8;
+    font-weight: 500;
+    line-height: 2;
+}
+.FiveSection__Foter__box-text-tile{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 450;
+}
+.FiveSection__Foter__block-li-list-item-link{
+    color:dimgrey;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.FiveSection__Foter__block-li-list-item{
+    transition: 0.5s;
+}
+.FiveSection__Foter__block-li-list-item-link:hover{
+    color:rgb(59, 59, 59);
+}
+.FiveSection__Foter__block-li-list-item:hover {
+    transform: translateX(5px) translateY(-3px);
+}
+.FiveSection__Footer__block-icon {
+    width: 15%;
+    height: 30%;
+}
+.FiveSection__Footer__block-icon img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.FiveSection__Foter__block-li-list-item:nth-child(1){
+    list-style-image: url(../img/facebook.png);
+}
+.FiveSection__Foter__block-li-list-item:nth-child(2){
+    list-style-image: url(../img/twitter-logo.png);
+}
+.FiveSection__Foter__block-li-list-item:nth-child(3){
+    list-style-image: url(../img/linkedin.png);
+}
+.FiveSection__Foter__block-li-list-item:nth-child(4){
+    list-style-image: url(../img/instagram.png);
+}
+@media (max-width:1520px){
+    .FiveSection__Main__block-box-text-name{
+        font-size: 15px;
+    }
+    .FiveSection__Main__block-box-text-position{
+        font-size: 13px;
+    }
+}
+@media(max-width:1300px){
+    .FiveSection__Main__block {
+        width: 80%;
+    }
+    .FiveSection__Footer__block {
+        width: 80%;
+    }
+}
+@media(max-width:1000px){
+    .FiveSection__Main__block-box{
+        width: calc(50% - 20px);
+    }
+    .FiveSection__Main__block{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .FiveSection__Footer__box-text {
+        width: 100%;
+    }
+    .FiveSection__Footer__block{
+        flex-direction: column;
+    }
+    .FiveSection__Footer__block-icon-li{
+        width: 100%;
+    }
+    .FiveSection__Footer__block-icon {
+        height: 55%;
+    }
+    .FiveSection__Footer__block-icon-li {
+        margin-top: 20px;
+    }
+    .FiveSection__Footer__block {
+        padding: 30px 40px 30px 40px;
+    }
+}
+
+@media(max-width:600px){
+    .FiveSection__Main__block-box{
+        width: 80%;
+    }
+    .FiveSection__Main__block{
+        justify-content: center;
+    }
+    .FiveSection__Foter__box-text-paragraph{
+        font-size: 13px;
+    }
+}
+@media(max-width:540px){
+    .FiveSection__Header-paragraph {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+    .FiveSection__Header-title {
+        font-size: 40px;
+    }
+    .FiveSection__Footer__block-icon-li {
+        margin-top: 40px;
+    }
+    .FiveSection__Foter__box-text-tile{
+        font-size: 18px;
+    }
+}
+@media(max-width:470px){
+     .FiveSection__Footer__block {
+        padding: 30px 20px 30px 20px;
+    }
+    .FiveSection__Foter__box-text-paragraph{
+        font-size: 11px;
+    }
+}
+@media(max-width:455px){
+    .FiveSection__Header-paragraph {
+        font-size: 15px;
+        text-align: center;
+    }
+   
+    .FiveSection__Header-title {
+        font-size: 38px;
+    }
+    
+    
+}

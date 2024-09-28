@@ -1,18 +1,35 @@
 .FistSection_header_burger{
     display: none;
 }
+.link{
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color:black
+}
+.link:hover{
+    color:white
+}
 @media (max-width:960px){
     .FistSection_header_burger{
         display: block;
         width: 8%;
     }
+    .FistSection_header_right_list_item:hover:before{
+        width: 0%;
+        height: 0%;
+    }
+    .FistSection_header_burger:hover .FistSection_header_right_list_item{
+        display: block;
+        font-size: 13px;
+    }
     .FistSection_header_burger:hover .FistSection_header_burger_menu{
         height: 320px;
-        
     }
     .FistSection_header_burger:hover .FistSection_header_burger_menu .FistSection_header_burger_menu_list{
         font-size: 15px;
-        
     }
     .FistSection_header_burger_menu{
         position: absolute;
@@ -27,13 +44,13 @@
     }
     .FistSection_header_burger_menu_list{
         font-family: "Montserrat", sans-serif;
-        margin-right: 20px;
+        margin-left: 20px;
         height: 100%;
         color: #ECECEC;
         font-size: 0;
     }
     .FistSection_header_burger_list{
-        list-style: none;
+        
         gap:15px;
     }
     .FistSection_header_burger_menu_close_image{
