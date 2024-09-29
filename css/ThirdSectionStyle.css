@@ -1,4 +1,7 @@
 
+.ThirdSection{
+    margin-top: 50px;
+}
 .ThirdSection__Header{
     gap:var(--twenty);
 

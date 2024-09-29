@@ -6,8 +6,8 @@
 }
 html{
     scroll-behavior: smooth;
-    /* overflow: hidden;
-    animation: enableScroll 1s 5s  forwards; */
+    overflow: hidden;
+    animation: enableScroll 1s 3s  forwards;
 }
 html,
 body{
