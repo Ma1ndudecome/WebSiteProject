@@ -15,6 +15,7 @@ body{
     height: var(--OneHundred);
     margin: 0;
     position: var(--PosRelative);
+    cursor: url("../img/cursor.png"), default;
     --PosRelative:relative;
     --twenty:20px;
     --center:center;
@@ -88,6 +89,8 @@ body{
 .FistSection_header_right_list_item:hover{
     transform: translateY(-2px);
     color:var(--purplecolor);
+    cursor: url("../img/cursor1.png"), default;
+
 }
 
 .FistSection_header_burger_image{
@@ -124,6 +127,7 @@ body{
 }
 .FirstSection_main_top_button:hover{
     box-shadow: 0px 0px 20px var(--redcolor);
+    cursor: url("../img/cursor1.png"), default;
 
 }
 .FirstSection_main_bottom_item{

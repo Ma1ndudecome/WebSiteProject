@@ -70,6 +70,7 @@
 }
 .circleOrange::before{
     content: "";
+    position: absolute;
     width: 75%;
     height: 75%;
     background-color: var(--orangecolor);

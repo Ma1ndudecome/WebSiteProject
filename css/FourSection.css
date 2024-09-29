@@ -33,6 +33,10 @@
     cursor: pointer;
     position: relative;
 }
+.FourSection__Main-block-box:hover{
+    cursor: url("../img/cursor1.png"), default;
+}
+
 .FourSection__Main-block-box:hover .FourSection__Main-block-box-image{
     height: 89%;
 }

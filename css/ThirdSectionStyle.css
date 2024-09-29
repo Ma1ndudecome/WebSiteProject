@@ -53,6 +53,8 @@ video{
 .ThirSection__Main__block-box:hover{
     transform: translateX(-10px) translateY(-10px);
     box-shadow: 10px 10px 0px aqua;
+    cursor: url("../img/cursor1.png"), default;
+
 }
 .ThirSection__Main__block-box:hover .IconTextHoverBlock{
    opacity: 1;
@@ -124,6 +126,8 @@ video{
 }
 .svgImage:hover{
 transform: scale(1.1) rotateZ(360deg);
+cursor: url("../img/cursor1.png"), default;
+
 }
 .ThirdSection__Footer__block-box-paragraph{
     font-family: "Poppins", sans-serif;
