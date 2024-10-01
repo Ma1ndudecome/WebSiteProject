@@ -180,11 +180,12 @@
 }
 .FiveSection__Foter__block-li-list-item-link:hover{
     color:rgb(59, 59, 59);
+    cursor: url("../img/cursor1.png"), default;
 }
 .FiveSection__Foter__block-li-list-item:hover {
     transform: translateX(5px) translateY(-3px);
-    cursor: url("../img/cursor1.png"), default;
 }
+
 .FiveSection__Footer__block-icon {
     width: 15%;
     height: 30%;
