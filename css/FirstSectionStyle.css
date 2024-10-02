@@ -25,12 +25,12 @@ body{
     --orangecolor:rgb(235, 181, 35);
     --greencolor:lightgreen;
     --purplecolor:rgb(240, 55, 240);
-    --whitecolor:white
+    --whitecolor:white;
+    --PosAbsolute:absolute;
 }
 
 .FirstSection_Main{
     height: 100vh;
-    
 }
 .FistSection_header{
     height: 8%;
@@ -77,7 +77,7 @@ body{
     content: "";
     width: 0;
     height: 2px;
-    position: absolute;
+    position: var(--PosAbsolute);;
     left:0;
     bottom:0;
     background-color: var(--purplecolor);
@@ -98,7 +98,7 @@ body{
     height:var(--OneHundred); 
 }
 .FirstSection_main_top{
-    gap: 50px;
+    gap: var(--halfPix);
     height: 60%;
 }
 .FirstSection_main_bottom{
@@ -106,15 +106,14 @@ body{
     gap: var(--twenty); 
 }
 .FirstSection_main_top_title{
-    color:white;
+    color:var(--whitecolor);
     font-size: 75px;
     text-align: var(--center);
     font-family: "Gowun Batang", serif;
     font-weight: 600;
 }
 .FirstSection_main_top_button{
-    text-decoration: none;
-    color:white;
+    color:var(--whitecolor);
     padding: 15px 40px 15px 40px;
     background-color:var(--redcolor);
     border-radius: 30px;
@@ -126,7 +125,7 @@ body{
     
 }
 .FirstSection_main_top_button:hover{
-    box-shadow: 0px 0px 20px var(--redcolor);
+    box-shadow: 0px 0px var(--twenty) var(--redcolor);
     cursor: url("../img/cursor1.png"), default;
 
 }
@@ -210,7 +209,7 @@ body{
         display: none;
     }
     .FirstSection_main_top_title{
-        font-size: 50px; 
+        font-size: var(--halfPix);
     }
     .FirstSection_main_bottom_item {
         width: 25%;
@@ -220,10 +219,10 @@ body{
 
     }
     .FirstSection_main_top{
-        height: 50%;
+        height: var(--halfPros);
     }
     .FirstSection_main_bottom{
-        height: 50%;
+        height: var(--halfPros);
     }
 
 }
@@ -232,10 +231,10 @@ body{
         font-size: 40px; 
     }
     .FirstSection_main_main{
-        gap: 20px;
+        gap: var(--twenty);
     }
     .FirstSection_main_bottom_item{
-        text-align: center;
+        text-align: var(--center);
     }
     .FirstSection_main_bottom_item_image {
         width: 22%;
@@ -254,7 +253,7 @@ body{
         font-size: 29px; 
     }
     .FirstSection_main_bottom_item_image {
-        width: 50%;
+        width: var(--halfPros);
     }
 }
 @media (max-height:375px){
@@ -286,7 +285,7 @@ body{
 }
 @media (max-height:500px){
     .FirstSection_main_top {
-        gap: 20px;
+        gap: var(--twenty);
     }
     .FirstSection_main_top_title{
         font-size: 25px; 

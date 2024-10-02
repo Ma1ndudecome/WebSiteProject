@@ -16,8 +16,10 @@
 }
 .containerArrow_item:hover{
     background-color: rgb(182, 182, 182);
-   
     border-radius: 10px;
+}
+.containerArrow_item img:hover{
+    cursor: url("../img/cursor1.png"), default;
 }
 @media (max-width:700px){
     .containerArrow{

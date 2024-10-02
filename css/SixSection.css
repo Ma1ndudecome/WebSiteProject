@@ -12,20 +12,20 @@
 }
 .SixSection__Footer__container-box{
     width: 15%;
-    gap:20px
+    gap:var(--twenty);
 }
 .SixSection__Footer__container-box-image{
     height: 20%;
 }
 .SixSection__Footer__container-box-number{
     text-align: var(--center);
-    color:white;
-    font-size: 20px;
+    color:var(--whitecolor);
+    font-size: var(--twenty);
     font-family: "Poppins", sans-serif;
 }
 .SixSection__Footer__container-box-title{
     text-align: var(--center);
-    color:white;
+    color:var(--whitecolor);
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 350;
@@ -42,7 +42,7 @@
     width: 75%;
     height: 75%;
     background-color: var(--redcolor);
-    border-radius: 50%;
+    border-radius:var(--halfPros);
 }
 .circleGreen{
     border: 2px solid var(--greencolor);
@@ -70,7 +70,7 @@
 }
 .circleOrange::before{
     content: "";
-    position: absolute;
+    position:var(--PosAbsolute);
     width: 75%;
     height: 75%;
     background-color: var(--orangecolor);
@@ -80,7 +80,7 @@
     width: 13px;
     height: 13px;
     border-radius: var(--halfPros);
-    position: relative;
+    position: var(--PosRelative);
 }
 @media (max-width:1500px){
     .SixSection__Footer__container-box-image {
@@ -141,7 +141,6 @@
     .SixSection__Footer__container-box {
         width: 35%;
         height: var(--halfPros);
-
     }
     .SixSection__Footer__container {
         flex-wrap: wrap;

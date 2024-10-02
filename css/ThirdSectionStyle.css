@@ -1,6 +1,6 @@
 
 .ThirdSection{
-    margin-top: 50px;
+    margin-top: var(--halfPix);
 }
 .ThirdSection__Header{
     gap:var(--twenty);
@@ -32,7 +32,7 @@ video{
 }
 .ThirdSection__Header-paragraph{
     font-family: "Montserrat", sans-serif;
-    text-align: center;
+    text-align: var(--center);
     font-size: 15px;
 }
 .ThirdSection__Main__block{
@@ -43,7 +43,7 @@ video{
     width:calc(33.3333% - 20px);
     transition: 0.5s;
     cursor: pointer;
-    position: relative;
+    position: var(--PosRelative);
 }
 .ThirSection__Main__block-box-image{
     width: var(--OneHundred);
@@ -76,7 +76,7 @@ video{
 .text{
     height: var(--halfPros);
     margin-top: var(----twenty);
-    color:white;
+    color:var(--whitecolor);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
 }
@@ -90,12 +90,12 @@ video{
     background-image: url(../img/background-second.jpg);
     background-size: cover;
     background-position: top;
-    position: relative;
+    position: var(--PosRelative);
 }
 .ThirdSection__Footer__block-box-title{
     z-index: 3;
     font-family: "Poppins", sans-serif;
-    color:white;
+    color:var(--whitecolor);
     font-size: 30px;
     padding: 0;
     margin: 0;
@@ -103,7 +103,7 @@ video{
 }
 .ThirdSection__Footer__block-box-circle:before{
     content: "";
-    position: absolute;
+    position: var(--PosAbsolute);
     left:0;
     top:0;
     width: var(--OneHundred);
@@ -131,7 +131,7 @@ cursor: url("../img/cursor1.png"), default;
 }
 .ThirdSection__Footer__block-box-paragraph{
     font-family: "Poppins", sans-serif;
-    color:white;
+    color:var(--whitecolor);
     z-index: 3;
 }
 
@@ -181,7 +181,7 @@ cursor: url("../img/cursor1.png"), default;
     }
     .ThirdSection__Main__block{
         flex-direction: column;
-        align-items: center;
+        align-items: var(--center);
     }
     .ThirdSection__Footer {
         height: 300px;

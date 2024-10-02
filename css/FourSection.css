@@ -31,7 +31,7 @@
     padding: 5px;
     box-sizing: border-box;
     cursor: pointer;
-    position: relative;
+    position: var(--PosRelative);
 }
 .FourSection__Main-block-box:hover{
     cursor: url("../img/cursor1.png"), default;
@@ -48,13 +48,13 @@
 }
 
 .FourSection__Main-block-box-image{
-    width: 100%;
-    height: 100%;
+    width: var(--OneHundred);
+    height: var(--OneHundred);
     transition: 0.5s;
 }
 .FourSection__Main-block-box:before{
     content: "";
-    position: absolute;
+    position: var(--PosAbsolute);
     top:35%;
     background-image:url(../img/plus.svg);
     width: 30%;
@@ -69,14 +69,14 @@
     
 }
 .FourSection__Main-block-box-image-color-container{
-    width: 100%;
+    width: var(--OneHundred);
     height: 3px;
     opacity: 0;
     transition: 0.3s;
 }
 .FourSection__Main-block-box-image-photo{
     height: calc(100% - 3px);
-    width: 100%;
+    width: var(--OneHundred);
 }
 .color{
     width: 25%;
@@ -137,13 +137,13 @@
         font-size: 30px;
     }
     .FourSection__Main{
-        margin-top: 50px;
+        margin-top: var(--halfPix);
     }
 
 }
 @media (max-width:600px){
     .FourSection__Main-block{
-        grid-template-columns: 100%; 
+        grid-template-columns: var(--OneHundred); 
         gap:30px
     }
     .FourSection__Main-block-box-text{
@@ -153,7 +153,7 @@
 @media (max-width:490px){
     .FourSection__Header-paragraph {
         font-size: 12px;
-        text-align: center;
+        text-align: var(--center);
     }
     .FourSection__Main-block-box-text {
         font-size: 13px;

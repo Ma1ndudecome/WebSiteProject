@@ -10,7 +10,7 @@
     color:rgb(152, 235, 120)
 }
 .link:hover{
-    color:white
+    color:var(--whitecolor);
 }
 @media (max-width:960px){
     .FistSection_header_burger{
@@ -32,7 +32,7 @@
         font-size: 15px;
     }
     .FistSection_header_burger_menu{
-        position: absolute;
+        position: var(--PosAbsolute);
         right:0;
         top: 0;
         width: 168px;
@@ -40,12 +40,12 @@
         background-color: rgba(24, 36, 56, 0.97);
         z-index: 1;
         transition: 0.5s;
-        border-radius: 20px;
+        border-radius: var(--twenty);
     }
     .FistSection_header_burger_menu_list{
         font-family: "Montserrat", sans-serif;
-        margin-left: 20px;
-        height: 100%;
+        margin-left: var(--twenty);
+        height:var(--OneHundred);
         color: #ECECEC;
         font-size: 0;
     }
@@ -54,7 +54,7 @@
         gap:15px;
     }
     .FistSection_header_burger_menu_close_image{
-        width: 100%;
+        width: var(--OneHundred);
     }
 
 }

@@ -1,38 +1,37 @@
 .LoadScreen{
     position: fixed;
     overflow: hidden;
-    width: 100%;
+    width: var(--OneHundred);
     height: 100vh;
     background-color:rgb(28, 39, 58);
     z-index: 4;
     opacity: 1;
     animation: opacity 0.1s 3s forwards;
-    display: none;
 }
 
 .LoadScreen_item_load {
     height: 20%;
 }
 .LoadScreen_item_load img{
-    width: 100%;
-    height: 100%;
+    width: var(--OneHundred);
+    height: var(--OneHundred);
 }
 .LoadScreen_item_loadBar{
     width: 20%;
     height: 2%;
     border: 1px solid black;
     border-radius: 5px;
-    position: relative;
+    position: var(--PosRelative);
 }
 .LoadScreen_item_loadBar:before{
     content: "";
     width: 0%;
-    height: 100%;
-    position: absolute;
+    height: var(--OneHundred);
+    position: var(--PosAbsolute);;
     left:0;
     top:0;
     background-color: rgb(250, 56, 56);
-    border-radius: 20px;
+    border-radius: var(--twenty);
     animation: bar 3s  forwards;
 }
 @keyframes opacity{
@@ -49,12 +48,12 @@
         width: 70%;
     }
     100%{
-        width: 100%;
+        width: var(--OneHundred);
     }
  }
 @media (max-width:900px){
     .LoadScreen_item_loadBar {
-        width: 50%;
+        width: var(--halfPros);
     }
 }
 @media(max-height:500px){
