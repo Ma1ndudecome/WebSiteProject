@@ -7,7 +7,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color:rgb(152, 235, 120)
+    color:rgb(0, 0, 0)
 }
 .link:hover{
     color:var(--whitecolor);
@@ -37,7 +37,7 @@
         top: 0;
         width: 168px;
         height: 0px;
-        background-color: rgba(24, 36, 56, 0.97);
+        background-color: rgb(186 185 186 / 97%);
         z-index: 1;
         transition: 0.5s;
         border-radius: var(--twenty);
