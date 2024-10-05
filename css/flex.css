@@ -28,3 +28,6 @@
 .justifyStart{
     justify-content: flex-start;
 }
+.wrap{
+    flex-wrap: wrap;
+}

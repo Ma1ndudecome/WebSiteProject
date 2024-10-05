@@ -16,6 +16,43 @@
     .FistSection_header_burger{
         display: block;
         width: 8%;
+        position: relative;
+        margin-right: 20px;
+    }
+    .burger{
+        width: var(--OneHundred);
+        height: 10%;
+        border-radius: 10px;
+        background-color: black;
+        margin-top: 10px;
+        transition: 1s;
+    }
+    .FistSection_header_burger:before,
+    .FistSection_header_burger:after{
+        content: "";
+        position: var(--PosAbsolute);
+        width: var(--OneHundred);
+        height: 10%;
+        background-color: black;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    .FistSection_header_burger::before{
+        top:74%
+    }
+    .FistSection_header_burger::after{
+        top:45%
+    }
+    .FistSection_header_burger:hover .burger{
+       opacity: 0;
+    }
+    .FistSection_header_burger:hover::after{
+        transform: rotateZ(138deg);
+    }
+    .FistSection_header_burger:hover::before{
+        transform: rotateZ(220deg);
+        top: 46%;
     }
     .FistSection_header_right_list_item:hover:before{
         width: 0%;
@@ -26,32 +63,23 @@
         font-size: 13px;
     }
     .FistSection_header_burger:hover .FistSection_header_burger_menu{
-        height: 320px;
+        height: 50%
     }
-    .FistSection_header_burger:hover .FistSection_header_burger_menu .FistSection_header_burger_menu_list{
-        font-size: 15px;
-    }
-    .FistSection_header_burger_menu{
-        position: var(--PosAbsolute);
-        right:0;
-        top: 0;
-        width: 168px;
+    .FistSection_header_burger_menu {
+        position: fixed;
+        right: 0px;
+        top: 8%;
+        width: 100%;
         height: 0px;
         background-color: rgb(186 185 186 / 97%);
         z-index: 1;
         transition: 0.5s;
         border-radius: var(--twenty);
     }
-    .FistSection_header_burger_menu_list{
-        font-family: "Montserrat", sans-serif;
-        margin-left: var(--twenty);
-        height:var(--OneHundred);
-        color: #ECECEC;
-        font-size: 0;
-    }
     .FistSection_header_burger_list{
-        
         gap:15px;
+        height: 100%;
+        width: 100%;
     }
     .FistSection_header_burger_menu_close_image{
         width: var(--OneHundred);
@@ -73,3 +101,69 @@
         width: 17%;
     }
 }
+@media (max-height:600px) {
+    .burger{
+        height: 8%;
+        width: 70%;
+    }
+    .FistSection_header_burger:before,
+    .FistSection_header_burger:after{
+        height: 10%;
+        width: 95%;
+    }
+    .FistSection_header_burger::before{
+        top:75%
+    }
+    .FistSection_header_burger::after{
+        top:49%
+    }
+    .FistSection_header{
+        height: 10%;
+    }
+    .FistSection_header_burger_menu {
+        top: 10%;
+    }
+    .FistSection_header_burger:before, .FistSection_header_burger:after {
+        width: 70%;
+        height: 8%;
+    }
+    .FistSection_header_burger:hover .FistSection_header_burger_menu{
+        height: 60%;
+        
+    }
+}
+@media (max-height:500px){
+    .FistSection_header_burger:hover .FistSection_header_burger_menu{
+        height: 75%;
+        
+    }
+}
+@media (max-height:450px){
+
+    .FistSection_header_burger::before{
+        top:79%
+    }
+    .FistSection_header_burger::after{
+        top:53%
+    }
+    .burger{
+        width: 70%;
+    }
+    .FistSection_header_burger:before,
+    .FistSection_header_burger:after{
+        width: 70%;
+    }
+    .FistSection_header_burger:hover::before {
+        top: 49%;
+    }
+    .FistSection_header{
+        height: 12%;
+    }
+    .FistSection_header_burger_menu {
+        top: 12%;
+    }
+    .FistSection_header_burger_list{
+        height: 80%;
+    }
+}
+

@@ -34,9 +34,15 @@ body{
 }
 .FistSection_header{
     height: 8%;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    border: 1px solid black;
+
 }
 .FirstSection_main_main{
-    height: 92%;
+    height: 100%;
     position: var(--PosRelative);
     background-image: url(../img/BackLapTop-photoaidcom-darken.jpg);
     background-size: cover;
@@ -258,10 +264,7 @@ body{
 }
 @media (max-height:375px){
     .FistSection_header{
-        height: 10%;
-    }
-    .FirstSection_main_main {
-        height: 90%;   
+        height: 12%;
     }
     .FirstSection_main_top{
         height: 60%;
