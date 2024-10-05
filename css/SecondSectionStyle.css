@@ -38,6 +38,10 @@
 .SecondSection__block-box-image{
     height: var(--OneHundred);
 }
+.SecondSection__block-box-image-image{
+    width: 20%;
+    margin-top: 15px;
+}
 .SecondSection__block-box-text{
     height: 75%;
     text-align: var(--center);
