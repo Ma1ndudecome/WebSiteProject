@@ -7,7 +7,6 @@
     z-index: 4;
     opacity: 1;
     animation: opacity 0.1s 3s forwards;
-    display: none;
 }
 
 .LoadScreen_item_load {
