@@ -4,7 +4,7 @@
     width: var(--OneHundred);
     height: 100vh;
     background-color:rgb(28, 39, 58);
-    z-index: 4;
+    z-index: 5;
     opacity: 1;
     animation: opacity 0.1s 3s forwards;
 }
