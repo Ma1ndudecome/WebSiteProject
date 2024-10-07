@@ -211,7 +211,7 @@ body{
     }
 }
 @media (max-width:960px){
-    .FistSection_header_right_list_item{
+    .FistSection_header_right_list .FistSection_header_right_list_item{
         display: none;
     }
     .FirstSection_main_top_title{

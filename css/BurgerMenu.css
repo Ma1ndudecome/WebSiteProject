@@ -12,6 +12,7 @@
 .link:hover{
     color:var(--whitecolor);
 }
+
 @media (max-width:960px){
     .FistSection_header_burger{
         display: block;
@@ -54,27 +55,27 @@
         transform: rotateZ(220deg);
         top: 46%;
     }
-    .FistSection_header_right_list_item:hover:before{
-        width: 0%;
-        height: 0%;
+
+    .FistSection_header_burger:hover .FistSection_header_burger_list{
+        display: flex;
     }
-    .FistSection_header_burger:hover .FistSection_header_right_list_item{
-        display: block;
-        font-size: 13px;
-    }
-    .FistSection_header_burger:hover .FistSection_header_burger_menu{
-        height: 50%
-    }
+
     .FistSection_header_burger_menu {
         position: fixed;
         right: 0px;
         top: 8%;
         width: 100%;
-        height: 0px;
+        height: 0;
         background-color: rgb(186 185 186 / 97%);
         z-index: 1;
         transition: 0.5s;
         border-radius: var(--twenty);
+    }
+    .FistSection_header_burger:hover .FistSection_header_burger_menu{
+        height: 50%;
+    }
+    .FistSection_header_burger_list{
+        display: none;
     }
     .FistSection_header_burger_list{
         gap:15px;
@@ -84,7 +85,7 @@
     .FistSection_header_burger_menu_close_image{
         width: var(--OneHundred);
     }
-
+ 
 }
 @media (max-width:700px){
     .FistSection_header_burger{
